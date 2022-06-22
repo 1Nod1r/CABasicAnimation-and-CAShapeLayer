@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86D3E2CD28630CC800A352BB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3E2CC28630CC800A352BB /* SecondViewController.swift */; };
+		86D3E2D028630F4C00A352BB /* 110304-popeye.json in Resources */ = {isa = PBXBuildFile; fileRef = 86D3E2CE28630F4C00A352BB /* 110304-popeye.json */; };
+		86D3E2D128630F4C00A352BB /* 109887-bike.json in Resources */ = {isa = PBXBuildFile; fileRef = 86D3E2CF28630F4C00A352BB /* 109887-bike.json */; };
 		86E63301286245E400C6819E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E63300286245E400C6819E /* AppDelegate.swift */; };
 		86E63303286245E400C6819E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E63302286245E400C6819E /* SceneDelegate.swift */; };
 		86E63305286245E400C6819E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E63304286245E400C6819E /* ViewController.swift */; };
 		86E63308286245E400C6819E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E63306286245E400C6819E /* Main.storyboard */; };
 		86E6330A286245E600C6819E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E63309286245E600C6819E /* Assets.xcassets */; };
 		86E6330D286245E600C6819E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E6330B286245E600C6819E /* LaunchScreen.storyboard */; };
+		BB8A7E91469FA2D3524714D4 /* Pods_CABasicAnimation_and_CAShapeLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00B57FC5A89715B709832F5 /* Pods_CABasicAnimation_and_CAShapeLayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34699E18A4EA3B9036326B1B /* Pods-CABasicAnimation and CAShapeLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CABasicAnimation and CAShapeLayer.release.xcconfig"; path = "Target Support Files/Pods-CABasicAnimation and CAShapeLayer/Pods-CABasicAnimation and CAShapeLayer.release.xcconfig"; sourceTree = "<group>"; };
+		69443B762B47C20673F09565 /* Pods-CABasicAnimation and CAShapeLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CABasicAnimation and CAShapeLayer.debug.xcconfig"; path = "Target Support Files/Pods-CABasicAnimation and CAShapeLayer/Pods-CABasicAnimation and CAShapeLayer.debug.xcconfig"; sourceTree = "<group>"; };
+		86D3E2CC28630CC800A352BB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		86D3E2CE28630F4C00A352BB /* 110304-popeye.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "110304-popeye.json"; sourceTree = "<group>"; };
+		86D3E2CF28630F4C00A352BB /* 109887-bike.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "109887-bike.json"; sourceTree = "<group>"; };
 		86E632FD286245E400C6819E /* CABasicAnimation and CAShapeLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CABasicAnimation and CAShapeLayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E63300286245E400C6819E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86E63302286245E400C6819E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		86E63309286245E600C6819E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86E6330C286245E600C6819E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86E6330E286245E600C6819E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00B57FC5A89715B709832F5 /* Pods_CABasicAnimation_and_CAShapeLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CABasicAnimation_and_CAShapeLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8A7E91469FA2D3524714D4 /* Pods_CABasicAnimation_and_CAShapeLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		048FC46D20ED8EC4C26C73F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69443B762B47C20673F09565 /* Pods-CABasicAnimation and CAShapeLayer.debug.xcconfig */,
+				34699E18A4EA3B9036326B1B /* Pods-CABasicAnimation and CAShapeLayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		24E27631E2C60ADC300718CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A00B57FC5A89715B709832F5 /* Pods_CABasicAnimation_and_CAShapeLayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86E632F4286245E400C6819E = {
 			isa = PBXGroup;
 			children = (
 				86E632FF286245E400C6819E /* CABasicAnimation and CAShapeLayer */,
 				86E632FE286245E400C6819E /* Products */,
+				048FC46D20ED8EC4C26C73F3 /* Pods */,
+				24E27631E2C60ADC300718CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +89,13 @@
 				86E63300286245E400C6819E /* AppDelegate.swift */,
 				86E63302286245E400C6819E /* SceneDelegate.swift */,
 				86E63304286245E400C6819E /* ViewController.swift */,
+				86D3E2CC28630CC800A352BB /* SecondViewController.swift */,
 				86E63306286245E400C6819E /* Main.storyboard */,
 				86E63309286245E600C6819E /* Assets.xcassets */,
 				86E6330B286245E600C6819E /* LaunchScreen.storyboard */,
 				86E6330E286245E600C6819E /* Info.plist */,
+				86D3E2CF28630F4C00A352BB /* 109887-bike.json */,
+				86D3E2CE28630F4C00A352BB /* 110304-popeye.json */,
 			);
 			path = "CABasicAnimation and CAShapeLayer";
 			sourceTree = "<group>";
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86E63311286245E600C6819E /* Build configuration list for PBXNativeTarget "CABasicAnimation and CAShapeLayer" */;
 			buildPhases = (
+				8876220FBD80A50526BCB457 /* [CP] Check Pods Manifest.lock */,
 				86E632F9286245E400C6819E /* Sources */,
 				86E632FA286245E400C6819E /* Frameworks */,
 				86E632FB286245E400C6819E /* Resources */,
+				762AD68EF545EF752BF2BC23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,17 +162,62 @@
 			files = (
 				86E6330D286245E600C6819E /* LaunchScreen.storyboard in Resources */,
 				86E6330A286245E600C6819E /* Assets.xcassets in Resources */,
+				86D3E2D028630F4C00A352BB /* 110304-popeye.json in Resources */,
+				86D3E2D128630F4C00A352BB /* 109887-bike.json in Resources */,
 				86E63308286245E400C6819E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		762AD68EF545EF752BF2BC23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CABasicAnimation and CAShapeLayer/Pods-CABasicAnimation and CAShapeLayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CABasicAnimation and CAShapeLayer/Pods-CABasicAnimation and CAShapeLayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CABasicAnimation and CAShapeLayer/Pods-CABasicAnimation and CAShapeLayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8876220FBD80A50526BCB457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CABasicAnimation and CAShapeLayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86E632F9286245E400C6819E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D3E2CD28630CC800A352BB /* SecondViewController.swift in Sources */,
 				86E63305286245E400C6819E /* ViewController.swift in Sources */,
 				86E63301286245E400C6819E /* AppDelegate.swift in Sources */,
 				86E63303286245E400C6819E /* SceneDelegate.swift in Sources */,
@@ -282,6 +362,7 @@
 		};
 		86E63312286245E600C6819E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69443B762B47C20673F09565 /* Pods-CABasicAnimation and CAShapeLayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +391,7 @@
 		};
 		86E63313286245E600C6819E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34699E18A4EA3B9036326B1B /* Pods-CABasicAnimation and CAShapeLayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
