@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CAAnimationDelegate {
     
     var shapeLayer: CAShapeLayer! {
         didSet {
@@ -70,14 +70,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressed(){
-        
-        overShapeLayer.strokeEnd += 0.1
-        if overShapeLayer.strokeEnd > 1 {
-            let vc = ThirdViewController()
-            navigationController?.pushViewController(vc, animated: true)
-            overShapeLayer.strokeEnd = 0
-        }
-        
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.toValue = 1
+        animation.duration = 4
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.fillMode = .both
+        animation.isRemovedOnCompletion = false
+        animation.delegate = self
+        overShapeLayer.add(animation, forKey: nil)
+//        overShapeLayer.strokeEnd += 0.1
+//        if overShapeLayer.strokeEnd > 1 {
+//            let vc = ThirdViewController()
+//            navigationController?.pushViewController(vc, animated: true)
+//            overShapeLayer.strokeEnd = 0
+//        }
+    }
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        let vc = ThirdViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func didTapGest(_ sender: UITapGestureRecognizer){
@@ -131,5 +142,6 @@ class ViewController: UIViewController {
 //        view.layer.addSublayer(figureTwo)
     }
 
+    
 }
 
